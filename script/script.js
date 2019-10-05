@@ -3,7 +3,9 @@ var subject1 = subject.push("-5");
 subject.unshift("1000");
 var subject1 = subject.push("Last array element");
 var subject2 = subject.splice(3, 1);
-var subject3 = subject.filter(callback[thisArg]);
+function filter(subject) {
+  return typeof subject === "number";
+}
 
 console.log(subject.length);
 console.log(subject);
